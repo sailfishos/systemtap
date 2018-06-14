@@ -49,6 +49,7 @@ BuildRequires: readline-devel
 BuildRequires: ncurses-devel
 
 BuildRequires: systemd
+BuildRequires: python
 
 # Install requirements
 Requires: systemtap-client = %{version}-%{release}
