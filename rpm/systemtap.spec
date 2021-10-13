@@ -44,6 +44,7 @@ BuildRequires: pkgconfig(nss)
 BuildRequires: pkgconfig(sqlite3)
 # Needed for libstd++ < 4.0, without <tr1/memory>
 BuildRequires: pkgconfig(rpm) glibc-headers
+BuildRequires: pkgconfig(systemd)
 BuildRequires: elfutils-devel >= 0.142
 BuildRequires: readline-devel
 BuildRequires: ncurses-devel
