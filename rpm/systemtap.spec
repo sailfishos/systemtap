@@ -30,7 +30,6 @@ Release: 1%{?dist}
 # intermediary stap-server for --use-server:   systemtap-server (-devel unused)
 
 Summary: Programmable system-wide instrumentation system
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 Source: %{name}-%{version}.tar.gz
@@ -67,7 +66,6 @@ the components needed to locally develop and execute systemtap scripts.
 
 %package server
 Summary: Instrumentation System Server
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 Requires: systemtap-devel = %{version}-%{release}
@@ -87,7 +85,6 @@ compiles systemtap scripts to kernel objects on their demand.
 
 %package devel
 Summary: Programmable system-wide instrumentation system - development headers, tools
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 # Alternate kernel packages kernel-PAE-devel et al. have a virtual
@@ -107,7 +104,6 @@ a copy of the standard tapset library and the runtime library C files.
 
 %package runtime
 Summary: Programmable system-wide instrumentation system - runtime
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 Requires(pre): shadow-utils
@@ -119,7 +115,6 @@ using a local or remote systemtap-devel installation.
 
 %package client
 Summary: Programmable system-wide instrumentation system - client
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 Requires: zip unzip
@@ -136,7 +131,6 @@ documentation, and a copy of the tapset library for reference.
 
 %package initscript
 Summary: Systemtap Initscripts
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 Requires: systemtap = %{version}-%{release}
@@ -146,7 +140,6 @@ scripts at system startup.
 
 %package sdt-devel
 Summary: Static probe support tools
-Group: Development/System
 License: GPLv2+ and Public Domain
 URL: https://github.com/sailfishos/systemtap
 
@@ -158,7 +151,6 @@ with the optional dtrace-compatibility preprocessor to process related
 
 %package testsuite
 Summary: Instrumentation System Testsuite
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 Requires: systemtap = %{version}-%{release}
@@ -185,7 +177,6 @@ systemtap on the current system.
 
 %package runtime-virtguest
 Summary: Systemtap Cross-VM Instrumentation - guest
-Group: Development/System
 License: GPLv2+
 URL: https://github.com/sailfishos/systemtap
 Requires: systemtap-runtime = %{version}-%{release}
