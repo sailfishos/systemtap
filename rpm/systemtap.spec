@@ -32,8 +32,8 @@ Release: 1%{?dist}
 Summary: Programmable system-wide instrumentation system
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
-Source: ftp://sourceware.org/pub/systemtap/releases/systemtap-%{version}.tar.gz
+URL: https://github.com/sailfishos/systemtap
+Source: %{name}-%{version}.tar.gz
 
 # Build*
 BuildRequires: gcc-c++
@@ -69,7 +69,7 @@ the components needed to locally develop and execute systemtap scripts.
 Summary: Instrumentation System Server
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 Requires: systemtap-devel = %{version}-%{release}
 # On RHEL[45], /bin/mktemp comes from the 'mktemp' package.  On newer
 # distributions, /bin/mktemp comes from the 'coreutils' package.  To
@@ -89,7 +89,7 @@ compiles systemtap scripts to kernel objects on their demand.
 Summary: Programmable system-wide instrumentation system - development headers, tools
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 # Alternate kernel packages kernel-PAE-devel et al. have a virtual
 # provide for kernel-devel, so this requirement does the right thing,
 # at least past RHEL4.
@@ -109,7 +109,7 @@ a copy of the standard tapset library and the runtime library C files.
 Summary: Programmable system-wide instrumentation system - runtime
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 Requires(pre): shadow-utils
 
 %description runtime
@@ -121,7 +121,7 @@ using a local or remote systemtap-devel installation.
 Summary: Programmable system-wide instrumentation system - client
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 Requires: zip unzip
 Requires: systemtap-runtime = %{version}-%{release}
 Requires: coreutils grep sed unzip zip
@@ -138,7 +138,7 @@ documentation, and a copy of the tapset library for reference.
 Summary: Systemtap Initscripts
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 Requires: systemtap = %{version}-%{release}
 %description initscript
 This package includes a SysVinit script to launch selected systemtap
@@ -148,7 +148,7 @@ scripts at system startup.
 Summary: Static probe support tools
 Group: Development/System
 License: GPLv2+ and Public Domain
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 
 %description sdt-devel
 This package includes the <sys/sdt.h> header file used for static
@@ -160,7 +160,7 @@ with the optional dtrace-compatibility preprocessor to process related
 Summary: Instrumentation System Testsuite
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 Requires: systemtap = %{version}-%{release}
 Requires: systemtap-sdt-devel = %{version}-%{release}
 Requires: systemtap-server = %{version}-%{release}
@@ -187,7 +187,7 @@ systemtap on the current system.
 Summary: Systemtap Cross-VM Instrumentation - guest
 Group: Development/System
 License: GPLv2+
-URL: http://sourceware.org/systemtap/
+URL: https://github.com/sailfishos/systemtap
 Requires: systemtap-runtime = %{version}-%{release}
 Requires(post): findutils coreutils
 Requires(preun): grep coreutils
