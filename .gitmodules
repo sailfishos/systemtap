@@ -1,3 +1,3 @@
 [submodule "systemtap"]
 	path = systemtap
-	url = git://sourceware.org/git/systemtap.git
+	url = https://github.com/sailfishos-mirror/systemtap.git
